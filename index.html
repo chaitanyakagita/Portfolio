@@ -1,0 +1,334 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   
+    <!-- google fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@800&family=Cinzel:wght@700&family=Kaushan+Script&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+    
+</head>
+<body>
+     
+    <!---Header-->
+    <header class="header">
+        <a href="#" class="logo">Chaitanya <span>Kagita</span></a>
+       
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#gallery">My Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Chaitanya Kagita</h1>
+            <h3>And I'm a <span class="typing">Frontend Developer</span></h3>
+            <p>Welcome to my creative hub, where design meets innovation and imagination thrives...."Building tomorrow's innovations through design and technology."</p>
+            
+        
+           <div class="social-media">
+              <a href="https://github.com/chaitanyakagita"><i class='bx bxl-github' ></i></a>
+              <a href="https://www.linkedin.com/in/sai-chaitanya-kagita-82518424b/"><i class='bx bxl-linkedin'></i></a>
+              <a href="mailto:saichaitanya_kagita@srmap.edu.in"><i class='bx bx-envelope' ></i></a>
+              <a href="https://www.instagram.com/chaitanya_kagita/"><i class='bx bxl-instagram'></i></a>
+           </div>
+          <a href="Resume_SD.pdf" download="" class="btn">Download CV</a>
+        </div>
+
+
+        <div class="home-img"> 
+            <img class="img1" src="./images/img1.jpg" alt="">
+        </div>
+    </section>
+
+
+    <!--about section------------------------>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/img11.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            
+            
+            <p>I am an ambitious student enrolled at SRM University AP, actively pursuing a Bachelor of Technology degree.
+                My expertise lies in Artificial Intelligence, Machine Learning and Web Development. I am proficient in Python, C, C++, and Java.
+               My fervor lies in the domains of Artificial Intelligence, Machine Learning, and Web Development.</p>
+
+        
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+               
+            </div> 
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming</span><br>C, C++, Python, Java</li>
+                    <li><span>Full Stack Development</span><br>HTML, CSS, Bootstrap, JavaScript, React JS, Node JS, Express JS</li>
+                    <li><span>Artificial Intelligence</span><br>Computer Vision, Image Manipulation</li>
+                    <li><span>Dev Tools</span><br>Visual Studio Code, Github, Pycharm, Jupyter Notebook</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span><b>SRM University</b> - B.Tech</span><br> (2021 - 2025) <br>CGPA : <b>8.5</b></li>
+                    <li><span><b>Sasi Junior College</b> - Intermediate</span><br> (2019 - 2021)<br>Percentage : <b>98%</b></li>
+                    <li><span><b>Sri Chaitanya EM Institution</b> - Secondary Education</span><br> (2018 - 2019)<br>Percentage : <b>93%</b></li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Frontend Developer Intern</span><br>At IBM SkillsBuild Edunet Foundation</li>
+                    <li><span>Word Press Intern </span><br>At BragTech</li>
+                    <li><span>Artificial Intelligence Research (UROP)</span><br>At SRM AP</li>
+                    <li><span>Web Development Intern</span><br>At Bharat Intern</li>
+                </ul>
+            </div>
+            
+
+
+            <a href="Resume_SD.pdf" download="" class="btn">Download CV</a>  
+        </div>
+    </section>
+
+
+    <!--services---------------------------->
+    <section class="services" id="services">
+        <h2 class="heading">Areas of  <span>Expertise</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Full Stack Development</h3>
+                <p> I enjoy creating seamless user experiences through intuitive interfaces and robust functionality. My expertise includes HTML, CSS, JavaScript frameworks like React.js, and server-side technologies such as Node.js and Express.js. I thrive on tackling challenges in web development and continuously enhancing my skills to deliver efficient and user-centric solutions.</p>
+                 <a href="#" class="btn">Read More</a>    
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint' ></i>
+                <h3>Python Development</h3>
+                <p> I am enthusiastic about leveraging Python to build scalable web solutions and automate workflows effectively. My experience spans bulding scalable applications as well as data analysis and visualization using libraries such as Pandas and Matplotlib. I am committed to writing clean, efficient code and exploring Python’s capabilities in various domains of software development.</p>
+                 <a href="#" class="btn">Read More</a>    
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt' ></i>
+                <h3>AI & ML</h3>
+                <p>My fascination with Artificial Intelligence and Machine Learning stems from its transformative potential in industries worldwide. I am dedicated to exploring AI algorithms and techniques to develop intelligent systems and predictive models. I am very passionate about harnessing AI’s power to solve complex problems and drive innovation.</p>
+                 <a href="#" class="btn">Read More</a>    
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--portfolio---------------------------------------------->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My Latest <span>Projects</span></h2>
+        <p>
+            "Explore my diverse projects, showcasing creative expertise and solutions for real challenges. 
+            Each project reflects my commitment to exceptional results. Discover my portfolio's range
+            across different domains and cutting-edge technologies."</p>
+
+        <div class="portfolio-container">
+
+
+            <div class="portfolio-box">
+                <img src="https://etimg.etb2bimg.com/thumb/msid-89747662,imgsize-27846,width-1200,height=765,overlay-etauto/aftermarket/sride-car-pooling-app-offers-services-without-required-approval-rbi.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Ride Pooling MERN</h4>
+                    <p>Developed and implemented real-time Ride Pooling website using the MERN stack ( React JS, Node JS, Express JS, MongoDB) with enhanced user experience and functionalities.
+                        
+                        </p>
+                    <a href="https://github.com/chaitanyakagita/ToDoList"><i class='bx bx-link-external'></i></a>    
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://clipart-library.com/img/2071993.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Flix</h4>
+                    <p>Crafted a responsive and visually immersive online streaming platform using HTML, CSS ,JavaScript, seamlessly blending a diverse array of content categories such as Movies, TV shows, Series, and Anime.
+                        </p>
+                    <a href="https://github.com/chaitanyakagita/Flix"><i class='bx bx-link-external'></i></a>    
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://cdn.pixabay.com/photo/2015/03/05/17/34/calendar-660670_1280.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Calendar</h4>
+                    <p>Implemented a stylish and functional calendar UI using HTML, CSS ,JavaScript with advanced features, such as dark mode, to provide users with a personalized and visually appealing experience.
+                         
+                       </p>
+                    <a href="https://github.com/chaitanyakagita/Calendar"><i class='bx bx-link-external'></i></a>    
+                </div>
+            </div>
+
+          
+
+            <div class="portfolio-box">
+                <img src="https://analyticsindiamag.com/wp-content/uploads/2020/10/face.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Student Attendance using face Recognition</h4>
+                    <p>Developed and implemented an automated student attendance system using face recognition technology.
+                        
+                        </p>
+                    <a href="https://github.com/chaitanyakagita/Student-Attendence-using-face-Recognition"><i class='bx bx-link-external'></i></a>    
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://www.dataresolve.com/images/Employee%20Monitoring-01.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>People Counter</h4>
+                    <p>Developed and implemented a People Counter using Computer Vision and face recognition technology.
+                        
+                        </p>
+                    <a href="https://github.com/chaitanyakagita/People_Counter"><i class='bx bx-link-external'></i></a>    
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://e0.pxfuel.com/wallpapers/705/233/desktop-wallpaper-programming-laptop-girl-programmer.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Ping-Pong-Game</h4>
+                    <p> Designed using Python and Computer Vision to create an interactive and dynamic gaming experience. Implemented a scoring system, ensuring accurate point tracking and display. 
+                       </p>
+                    <a href="https://github.com/chaitanyakagita/Ping-Pong-Game"><i class='bx bx-link-external'></i></a>    
+                </div>
+            </div>
+        </div>
+
+        <a href="https://github.com/chaitanyakagita?tab=repositories" class="more-proj">See More Projects</a>
+    </section>
+
+
+
+   <!--gallery section---------------->
+   <section class="gallery" id="gallery">
+     <h2>Welcome To <span>MY Gallery</span></h2>
+     <h3>---Give it a Try!---</h5>
+    <img class="image" data-index="0" data-status="inactive" src="./images/pic1.jpg"  alt=""/>
+    <img class="image" data-index="1" data-status="inactive" src="./images/pic2.jpg" alt=""/>
+    <img class="image" data-index="2" data-status="inactive" src="./images/pic3.jpg" alt=""/>
+    <img class="image" data-index="3" data-status="inactive" src="./images/pic4.jpg" alt=""/>
+    <img class="image" data-index="4" data-status="inactive" src="./images/pic5.jpg" alt=""/>
+    <img class="image" data-index="5" data-status="inactive" src="./images/pic6.jpg" alt=""/>
+    <img class="image" data-index="6" data-status="inactive" src="./images/pic7.jpg" alt=""/>
+    <img class="image" data-index="7" data-status="inactive" src="./images/pic8.jpg" alt=""/>
+    <img class="image" data-index="8" data-status="inactive" src="./images/pic9.jpg" alt=""/>
+    <img class="image" data-index="9" data-status="inactive" src="./images/pic10.jpg" alt=""/>
+    <img class="image" data-index="9" data-status="inactive" src="./images/pic11.jpg" alt=""/>
+    <img class="image" data-index="9" data-status="inactive" src="./images/pic12.jpg" alt=""/>
+    <img class="image" data-index="9" data-status="inactive" src="./images/pic13.jpg" alt=""/>
+    
+   </section>
+  
+   
+
+   <!--contact---------------------->
+   <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <div class="navigation">
+        <ul>
+            <li>
+                <a  href="tel:+919441816789">
+                    <span class='bx bx-phone-call const' ></span>
+                    <span class="const">+91-9441816789</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="mailto:saichaitanya_kagita@srmap.edu.in">
+                    <span class='bx bx-envelope const'></span>
+                    <span class="const">saichaitanya_kagita@srmap.edu.in</span>
+                </a>
+
+            </li>
+           
+        </ul>
+    </div>
+
+    <div class="touch">
+        Get in touch by filling out the form below. 
+        I'm eager to connect and discuss opportunities with you!
+    </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        
+        <input type="hidden" name="access_key" value="707f58d0-6edd-4965-a4e7-47d8182f7776">
+
+        <div class="input-box">
+            <input type="text" placeholder="Your Name" name="name" required>
+            <input type="email" placeholder="Email Address" name="email" required>
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number"  name="number" required>
+            <input type="text" placeholder="Write a Subject....."  name="text" required>
+        </div>
+        <div>
+            <textarea id="" cols="30" rows="10" placeholder="Your Message....."  name="message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form>
+   </section>
+
+   
+
+   <!---footer--------------------->
+    <footer class="footer">
+        
+        <a href="#" class="logo logo2">Chaitanya <span>Kagita</span></a>
+        
+        <div class="social-media">
+            <a href="https://github.com/chaitanyakagita"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/sai-chaitanya-kagita-82518424b/"><i class='bx bxl-linkedin'></i></a>
+            <a href="mailto:saichaitanya_kagita@srmap.edu.in"><i class='bx bx-envelope' ></i></a>
+            <a href="https://www.instagram.com/chaitanya_kagita/"><i class='bx bxl-instagram'></i></a>
+         </div>
+
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 | All Rights Reserved.</p>
+        </div>
+        
+
+    </footer>
+
+
+
+
+
+    
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--web3 forms-->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
