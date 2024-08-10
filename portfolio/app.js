@@ -113,7 +113,7 @@ window.ontouchmove = e => {
 
 //typing animation
 var typed = new Typed(".typing",{
-  strings:["","Frontend Developer","Full Stack Developer","Web Designer","Python Developer"],
+  strings:["","Frontend Developer","Full Stack Developer","Python Developer"],
   typeSpeed:100,
   BackSpeed:60,
   loop :true
