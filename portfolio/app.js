@@ -40,74 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-//gallery section
-const images = document.querySelectorAll('.gallery .image');
-
-let globalIndex = 0,
-    last = { x: 0, y: 0 };
-
-const activate = (image, x, y) => {
-  image.style.left = `${x}px`;
-  image.style.top = `${y}px`;
-  image.style.zIndex = globalIndex;
-
-  image.dataset.status = 'active';
-
-  last = { x, y };
-};
-
-const distanceFromLast = (x, y) => {
-  return Math.hypot(x - last.x, y - last.y);
-};
-
-const handleOnMove = e => {
-  if (distanceFromLast(e.clientX, e.clientY) > window.innerWidth / 20) {
-    const lead = images[globalIndex % images.length],
-      tail = images[(globalIndex - 5) % images.length];
-
-    activate(lead, e.clientX, e.clientY);
-
-    if (tail) tail.dataset.status = 'inactive';
-
-    globalIndex++;
-  }
-};
-
-window.onmousemove = e => {
-  // Check if the cursor is within the gallery section
-  const gallery = document.querySelector('.gallery');
-  const { clientX, clientY } = e;
-  const { top, bottom, left, right } = gallery.getBoundingClientRect();
-  const cursorInsideGallery = clientX >= left && clientX <= right && clientY >= top && clientY <= bottom;
-
-  if (cursorInsideGallery) {
-    handleOnMove(e);
-  } else {
-    // If cursor is outside gallery, deactivate images
-    images.forEach(image => {
-      image.dataset.status = 'inactive';
-    });
-  }
-};
-
-window.ontouchmove = e => {
-  const touch = e.touches[0];
-  const { clientX, clientY } = touch;
-
-  // Check if the touch is within the gallery section
-  const gallery = document.querySelector('.gallery');
-  const { top, bottom, left, right } = gallery.getBoundingClientRect();
-  const touchInsideGallery = clientX >= left && clientX <= right && clientY >= top && clientY <= bottom;
-
-  if (touchInsideGallery) {
-    handleOnMove(touch);
-  } else {
-    // If touch is outside gallery, deactivate images
-    images.forEach(image => {
-      image.dataset.status = 'inactive';
-    });
-  }
-};
 
 
 
@@ -146,9 +78,9 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading, .gallery', {origin:'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .portfolio p, .contact form, .navigation, .touch, .contact p, .more-proj, .gallery h3', {origin:'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', {origin:'left'});
-ScrollReveal().reveal('.home-content p, .about-content', {origin:'right'});
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .portfolio p, .contact form, .navigation, .touch, .contact p, .more-proj, .gallery h3, .timeline-dot,.timeline-dot1, .descc, .timeline-items1', {origin:'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img, .eduleft, .skillleft', {origin:'left'});
+ScrollReveal().reveal('.home-content p, .about-content, .eduright, .skillright, .expright', {origin:'right'});
 
 
 
